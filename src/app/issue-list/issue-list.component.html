@@ -1,0 +1,18 @@
+<div>
+  <div *ngFor="let issue of issues" class="border">
+    <div>
+      <h2> Title : {{issue.title}}</h2>
+    </div>
+    <div>
+      <b>Body</b>:
+      <p [innerHTML]="issue.body" ></p>
+    </div>
+
+    <div>
+      <b>User Login</b> : {{issue.userLogin}}
+    </div>
+    <div>
+      <b>Assignee Login</b> : {{issue.assigneeLogin}}
+    </div>
+  </div>
+</div>

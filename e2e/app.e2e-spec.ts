@@ -1,10 +1,10 @@
-import { GitAngularIssuesPage } from './app.po';
+import { AngularGitIssuesPage } from './app.po';
 
-describe('git-angular-issues App', () => {
-  let page: GitAngularIssuesPage;
+describe('angular-git-issues App', () => {
+  let page: AngularGitIssuesPage;
 
   beforeEach(() => {
-    page = new GitAngularIssuesPage();
+    page = new AngularGitIssuesPage();
   });
 
   it('should display welcome message', () => {
