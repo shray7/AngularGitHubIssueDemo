@@ -1,0 +1,8 @@
+div {
+    margin: 1em;
+}
+
+.border{
+    border: 0.1mm solid black;
+    margin: 0.5em;
+}
