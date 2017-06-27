@@ -1,11 +1,11 @@
 <div>
-  <div *ngFor="let issue of issues" class="border">
-    <div>
-      <h2> Title : {{issue.title}}</h2>
+  <div *ngFor="let issue of issues" class="card" style="background-color: lightgray" >
+    <div >
+      <h3> Title : {{issue.title}}</h3>
     </div>
-    <div>
+    <div style="background-color:lightslategrey; border-radius: 5pt; margin:10px;padding:10px;" >
       <b>Body</b>:
-      <p [innerHTML]="issue.body" ></p>
+      <p [innerHTML]="issue.body"  ></p>
     </div>
 
     <div>
@@ -15,4 +15,15 @@
       <b>Assignee Login</b> : {{issue.assigneeLogin}}
     </div>
   </div>
+</div>
+<div class="wrapper" *ngIf="isItemVisible">
+    <div class="inner">
+        <span>L</span>
+        <span>o</span>
+        <span>a</span>
+        <span>d</span>
+        <span>i</span>
+        <span>n</span>
+        <span>g</span>
+    </div>
 </div>

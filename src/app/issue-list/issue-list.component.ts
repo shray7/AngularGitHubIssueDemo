@@ -8,7 +8,7 @@ import {Issue} from '../issue'
   styleUrls: ['./issue-list.component.css']
 })
 export class IssueListComponent implements OnInit {
-
+  isItemVisible = true;
   issues: Issue[];
   constructor(private httpService: HttpGitService) {
     this.issues = new Array<Issue>();
@@ -19,7 +19,7 @@ export class IssueListComponent implements OnInit {
   getData() {
     this.httpService.FetchData().subscribe(d => {
       for (let entry of d){
-        var issue = new Issue();
+        let issue = new Issue();
         issue.title = entry['title'];
         issue.body = entry['body'];
         issue.userLogin = entry['user']['login'];
@@ -32,6 +32,7 @@ export class IssueListComponent implements OnInit {
         this.issues.push(issue);
       }
     });
+    setInterval(() => this.isItemVisible = false, 1000);
   }
 
 

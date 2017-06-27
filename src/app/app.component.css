@@ -6,3 +6,12 @@ div {
     border: 0.1mm solid black;
     margin: 0.5em;
 }
+
+nav{
+    background-color: dodgerblue;
+    color: white;
+}
+
+a{
+    color: white;
+}
